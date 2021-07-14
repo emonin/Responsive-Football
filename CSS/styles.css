@@ -1,0 +1,352 @@
+/*  -----------
+    Google Font 
+    ----------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*  ------------
+    Common Style 
+    ------------ 
+*/
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/*  ------------------
+    header style start
+    ------------------
+ */
+header
+{
+    background: #2D25A0;
+}
+.title-banner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 140px 86px 156px;
+    margin-bottom: 86px;
+}
+.title h1
+{
+    font-style: normal;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.watch-live
+{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+}
+.fa-arrow-right
+{
+    margin-left: 8px;
+}
+
+.title-banner img
+{
+    width: 556px;
+    height: 438px;
+}
+.banner:hover
+{
+    transition: transform 1s ease-in-out;
+    transform: scale(1.1);
+}
+/*  ----------------
+    header Style End
+    ----------------
+ */ 
+/*  ----------------
+    main style start
+    ----------------
+*/
+
+/*  -------------------
+    Players style start
+    -------------------
+*/
+main  .players 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+    margin: 70px 210px 165px 180px;
+
+
+}
+.players-details
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    
+}
+.player-pic img
+{
+    width: 300px;
+    height: 256px;
+}
+h1 .player-name
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+}
+.player-about
+{
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/*  ------------------
+    Players style End
+    ------------------
+*/
+/*
+    --------------------
+    Sponsors style start
+    --------------------
+*/
+.official-sponsors h1
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+.official-sponsors
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.sponsors
+{
+    margin: 60px 0px;
+}
+/*  --------------------
+    Sponsors style start
+    --------------------
+*/
+
+/*  ---------------
+    main style End
+    ---------------
+*/
+
+/*  ------------------
+    Footer style start
+    ------------------
+*/
+
+/*  ----------------
+    Footer Top style
+    ----------------
+*/
+footer
+{
+    border-top: 2px solid #2D25A0 ;
+    background: rgba(211, 211, 211, 0.397);
+    padding: 60px;
+}
+footer h3
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 63px;
+}
+.top
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    justify-content: center;
+    margin-top: 90px;
+}
+.copa-america-logo img
+{
+width: 170PX;
+height: 155PX;
+}
+footer .top .links
+{
+    display: flex;
+    flex-direction: column;
+}
+footer .top .links a
+{
+    text-decoration: none;
+    color: black;
+}
+footer .top .apps
+{
+    display: flex;
+    flex-direction: column;
+}
+footer .top .apps i
+{
+    color: #2D25A0;
+    font-size: 50px;
+}
+footer .top .apps img
+{
+    width: 50px;
+    height: 50px;
+}
+/* 
+-------------------
+footer bottom style
+------------------- 
+*/
+footer .bottom
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.football-logo
+{
+    margin-top: 158px;
+    margin-bottom: 20px;
+}
+.football-logo img
+{
+    width: 483px;
+    height: 110px;
+}
+
+.social-link a
+{
+    align-items: center;
+    font-size: 32px;
+    color: #2D25A0;
+    margin-left: 14px;
+}
+/*  ----------------
+    Footer style end
+    ----------------
+*/
+/*  -----------
+    media query
+    ----------- 
+*/
+/*  ------
+    Mobile
+    ------ 
+*/
+@media only screen and (max-width: 688px) 
+{
+
+header .title-banner
+{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 55px;
+    margin-bottom: 86px;
+}
+.title
+{
+    margin-bottom: 50px;
+}
+.title h1
+{
+    font-style: normal;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+.title-banner img
+{
+    width: 329px;
+    height: 259px;
+}
+main  .players
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.players-details
+{
+     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+}
+footer, .official-sponsors, .bottom 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsors, .top, .social-link
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+    
+}
+.bottom .football-logo img
+{
+    width: 150px;
+    height: 42px;
+}
+   
+}
+
+/*  ------
+    Tablet
+    ------ 
+*/
+
+@media only screen and (min-width: 689px) and (max-width: 991px) 
+{
+ .title-banner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 86px 100px;
+    margin-bottom: 86px;
+}
+.title h1
+{
+    font-style: normal;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.title-banner img
+{
+    width: 356px;
+    height: 280px;
+}
+ 
+ main  .players 
+ {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: center;
+ }
+
+}
